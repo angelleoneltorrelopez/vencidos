@@ -1,0 +1,23 @@
+raton x encima
+.navbar-default .navbar-nav>li>a:focus{col
+#0D47A1
+
+seleccionado
+.navbar-default .navbar-nav>.active>a:focus
+
+#0D47A1
+
+fondo
+.navbar-default{background-col
+#1565C0
+
+color letra nombre aplicacion
+.navbar-default .navbar-brand{color
+
+
+login o logout raton encima
+.nav>li>a:focus
+#0D47A1
+
+color letra
+a{color:#ffffff
