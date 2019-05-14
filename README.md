@@ -5,8 +5,8 @@ Control de Vencimiento podrá mantener registro de la fecha de expiración de pr
 - Filtros por id, descripcion, casa, proveedores, politicas, fechas y productos activos o inactivos.
 - Notificación de vencimiento.
 <br>
-<img src="https://raw.githubusercontent.com/angelleoneltorrelopez/vencidos/master/images/01.png" width="400" height="200"/>
-<img src="https://raw.githubusercontent.com/angelleoneltorrelopez/vencidos/master/images/02.png" width="400" height="200"/>
+<img src="https://raw.githubusercontent.com/angelleoneltorrelopez/vencidos/master/images/01.png" width="300" height="200"/>
+<img src="https://raw.githubusercontent.com/angelleoneltorrelopez/vencidos/master/images/02.png" width="300" height="200"/>
 <img src="https://raw.githubusercontent.com/angelleoneltorrelopez/vencidos/master/images/03.png" width="400" height="200"/>
 <img src="https://raw.githubusercontent.com/angelleoneltorrelopez/vencidos/master/images/04.png" width="400" height="200"/>
 <img src="https://raw.githubusercontent.com/angelleoneltorrelopez/vencidos/master/images/05.png" width="400" height="200"/>
