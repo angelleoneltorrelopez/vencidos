@@ -1,5 +1,5 @@
 # vencidos
-Recursos: Yii Framework (PHP), MYSQL, BOOTSTRAP.
+Recursos: Yii Framework (PHP), MYSQL, BOOTSTRAP, MPDF60 Y YIIEXCEL.
 <br>
 <br>
 <img src="https://raw.githubusercontent.com/angelleoneltorrelopez/vencidos/master/images/01.png" width="400" height="200"/>
