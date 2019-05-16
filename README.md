@@ -1,5 +1,6 @@
 # vencidos
-Control de Vencimiento podrá mantener registro de la fecha de expiración de producto, realizar reportes personalizados en PDF y EXCEL.
+Recursos: Yii Framework (PHP), MYSQL, BOOTSTRAP.
+<br>
 <br>
 <img src="https://raw.githubusercontent.com/angelleoneltorrelopez/vencidos/master/images/01.png" width="400" height="200"/>
 <img src="https://raw.githubusercontent.com/angelleoneltorrelopez/vencidos/master/images/02.png" width="400" height="200"/>
