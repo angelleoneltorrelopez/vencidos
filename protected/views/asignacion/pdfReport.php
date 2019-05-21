@@ -48,11 +48,11 @@
  <sethtmlpagefooter name="myfooter" value="on" />
  mpdf-->
 <div style="text-align: right"><b>Fecha: </b><?php echo date("d/m/Y"); ?> </div>
-<b>Total Resultados:</b> <?php echo $contador; ?>
+<b>Total Resultados:</b> <?php echo $contador; $id = 0;?>
  <table class="items" width="100%" style="font-size: 11pt; border-collapse: collapse;" cellpadding="3">
  <thead>
  <tr>
- <td width="9.666666666667%"><b>Id</b></td>
+ <td width="9.666666666667%"><b>#</b></td>
  <td width="44.666666666667%"><b>Casa</b></td>
  <td width="44.666666666667%"><b>Proveedor</b></td>
  <td width="19.666666666667%"><b>Politica</b></td>
@@ -63,7 +63,7 @@
  <?php foreach($model as $row): ?>
  <tr>
  <td align="center">
- <?php echo $row->idasignacion; ?>
+ <?php $id++; echo $id; ?>
  </td>
  <td align="center">
  <?php $casa = Casa::model()->find('idcasa='.$row->idcasa);
