@@ -74,9 +74,11 @@
  echo $proveedor->nombreprov; ?>
  </td>
  <td align="center">
- <?php if($row->politica == 0){$pol = "En el mes";
- }else{$pol = $row->politica;}
- echo $pol; ?>
+<?php
+ if($row->politica == -1){echo $pol = 'No Devolucion';}
+ if($row->politica == 0){echo $pol = 'En el Mes';}
+ if($row->politica > 0){echo $row->politica;}
+ ?>
  </td>
  </tr>
  <?php endforeach; ?>
