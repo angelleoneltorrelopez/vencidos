@@ -87,216 +87,200 @@ class Reporte extends CActiveRecord
 	{
 		// @todo Please modify the following code to remove attributes that should not be searched.
 
-		$criteria=new CDbCriteria;
+		$criteria = new CDbCriteria;
 		$criteria2 = new CDbCriteria;
 		$criteria3 = new CDbCriteria;
 		$criteria4 = new CDbCriteria;
 		$criteria5 = new CDbCriteria;
 		$criteria6 = new CDbCriteria;
 
-
 $variable = $this->Caducidad;
 $year = 0;
 $year = (int) date("Y");
-$criteria->compare('Estado',"0",true);
 $criteria->order = "Politica";
 $resultado = substr($variable, 0, 4);
 
-		if($variable == $resultado."-01-01"){
+if($variable == $resultado."-01-01"){
 
-     $criteria->compare('Caducidad',$resultado."-01-01",true);
-   	 	$criteria->addCondition("(Politica=0 OR Politica=-1) AND Estado=0");
-	 $criteria2->compare('Caducidad',$resultado."-02-01",true);
-	 	$criteria2->addCondition("Politica=1 AND Estado=0");
-	 $criteria3->compare('Caducidad',$resultado."-03-01",true);
-	 	$criteria3->addCondition("Politica=2 AND Estado=0");
-	 $criteria4->compare('Caducidad',$resultado."-04-01",true);
-	 	$criteria4->addCondition("Politica=3 AND Estado=0");
-	 $criteria5->compare('Caducidad',$resultado."-05-01",true);
-	 $criteria5->addCondition("Politica=4 AND Estado=0");
-	 $criteria6->compare('Caducidad',$resultado."-06-01",true);
-	 $criteria6->addCondition("Politica=5 AND Estado=0");
+$criteria->compare('Caducidad',$resultado."-01-01",true);
+$criteria->addCondition("(Politica=0 OR Politica=-1)");
+$criteria2->compare('Caducidad',$resultado."-02-01",true);
+$criteria2->addCondition("Politica=1");
+$criteria3->compare('Caducidad',$resultado."-03-01",true);
+$criteria3->addCondition("Politica=2");
+$criteria4->compare('Caducidad',$resultado."-04-01",true);
+$criteria4->addCondition("Politica=3");
+$criteria5->compare('Caducidad',$resultado."-05-01",true);
+$criteria5->addCondition("Politica=4");
+$criteria6->compare('Caducidad',$resultado."-06-01",true);
+$criteria6->addCondition("Politica=5");
 }
 
 
-	if($variable == $resultado."-02-01"){
-
-	 $criteria->compare('Caducidad',$resultado."-02-01",true);
-   $criteria->addCondition("(Politica=0 OR Politica=-1) AND Estado=0");
- 	 $criteria2->compare('Caducidad',$resultado."-03-01",true);
- 	 $criteria2->addCondition("Politica=1 AND Estado=0");
- 	 $criteria3->compare('Caducidad',$resultado."-04-01",true);
- 	 $criteria3->addCondition("Politica=2 AND Estado=0");
- 	 $criteria4->compare('Caducidad',$resultado."-05-01",true);
- 	 $criteria4->addCondition("Politica=3 AND Estado=0");
- 	 $criteria5->compare('Caducidad',$resultado."-06-01",true);
- 	 $criteria5->addCondition("Politica=4 AND Estado=0");
- 	 $criteria6->compare('Caducidad',$resultado."-07-01",true);
- 	 $criteria6->addCondition("Politica=5 AND Estado=0");
+if($variable == $resultado."-02-01"){
+$criteria->compare('Caducidad',$resultado."-02-01",true);
+$criteria->addCondition("(Politica=0 OR Politica=-1)");
+$criteria2->compare('Caducidad',$resultado."-03-01",true);
+$criteria2->addCondition("Politica=1");
+$criteria3->compare('Caducidad',$resultado."-04-01",true);
+$criteria3->addCondition("Politica=2");
+$criteria4->compare('Caducidad',$resultado."-05-01",true);
+$criteria4->addCondition("Politica=3");
+$criteria5->compare('Caducidad',$resultado."-06-01",true);
+$criteria5->addCondition("Politica=4");
+$criteria6->compare('Caducidad',$resultado."-07-01",true);
+$criteria6->addCondition("Politica=5");
 }
 
 if($variable == $resultado."-03-01"){
- $criteria->compare('Caducidad',$resultado."-03-01",true);
- $criteria->addCondition("(Politica=0 OR Politica=-1) AND Estado=0");
- $criteria2->compare('Caducidad',$resultado."-04-01",true);
- $criteria2->addCondition("Politica=1 AND Estado=0");
- $criteria3->compare('Caducidad',$resultado."-05-01",true);
- $criteria3->addCondition("Politica=2 AND Estado=0");
- $criteria4->compare('Caducidad',$resultado."-06-01",true);
- $criteria4->addCondition("Politica=3 AND Estado=0");
- $criteria5->compare('Caducidad',$resultado."-07-01",true);
- $criteria5->addCondition("Politica=4 AND Estado=0");
- $criteria6->compare('Caducidad',$resultado."-08-01",true);
- $criteria6->addCondition("Politica=5 AND Estado=0");
+$criteria->compare('Caducidad',$resultado."-03-01",true);
+$criteria->addCondition("(Politica=0 OR Politica=-1)");
+$criteria2->compare('Caducidad',$resultado."-04-01",true);
+$criteria2->addCondition("Politica=1");
+$criteria3->compare('Caducidad',$resultado."-05-01",true);
+$criteria3->addCondition("Politica=2");
+$criteria4->compare('Caducidad',$resultado."-06-01",true);
+$criteria4->addCondition("Politica=3");
+$criteria5->compare('Caducidad',$resultado."-07-01",true);
+$criteria5->addCondition("Politica=4");
+$criteria6->compare('Caducidad',$resultado."-08-01",true);
+$criteria6->addCondition("Politica=5");
 }
 
 if($variable == $resultado."-04-01"){
- $criteria->compare('Caducidad',$resultado."-04-01",true);
- $criteria->addCondition("(Politica=0 OR Politica=-1) AND Estado=0");
- $criteria2->compare('Caducidad',$resultado."-05-01",true);
- $criteria2->addCondition("Politica=1 AND Estado=0");
- $criteria3->compare('Caducidad',$resultado."-06-01",true);
- $criteria3->addCondition("Politica=2 AND Estado=0");
- $criteria4->compare('Caducidad',$resultado."-07-01",true);
- $criteria4->addCondition("Politica=3 AND Estado=0");
- $criteria5->compare('Caducidad',$resultado."-08-01",true);
- $criteria5->addCondition("Politica=4 AND Estado=0");
- $criteria6->compare('Caducidad',$resultado."-09-01",true);
- $criteria6->addCondition("Politica=5 AND Estado=0");
+$criteria->compare('Caducidad',$resultado."-04-01",true);
+$criteria->addCondition("(Politica=0 OR Politica=-1)");
+$criteria2->compare('Caducidad',$resultado."-05-01",true);
+$criteria2->addCondition("Politica=1");
+$criteria3->compare('Caducidad',$resultado."-06-01",true);
+$criteria3->addCondition("Politica=2");
+$criteria4->compare('Caducidad',$resultado."-07-01",true);
+$criteria4->addCondition("Politica=3");
+$criteria5->compare('Caducidad',$resultado."-08-01",true);
+$criteria5->addCondition("Politica=4");
+$criteria6->compare('Caducidad',$resultado."-09-01",true);
+$criteria6->addCondition("Politica=5");
 }
 
 if($variable == $resultado."-05-01"){
- $criteria->compare('Caducidad',$resultado."-05-01",true);
- $criteria->addCondition("(Politica=0 OR Politica=-1) AND Estado=0");
- $criteria2->compare('Caducidad',$resultado."-06-01",true);
- $criteria2->addCondition("Politica=1 AND Estado=0");
- $criteria3->compare('Caducidad',$resultado."-07-01",true);
- $criteria3->addCondition("Politica=2 AND Estado=0");
- $criteria4->compare('Caducidad',$resultado."-08-01",true);
- $criteria4->addCondition("Politica=3 AND Estado=0");
- $criteria5->compare('Caducidad',$resultado."-09-01",true);
- $criteria5->addCondition("Politica=4 AND Estado=0");
- $criteria6->compare('Caducidad',$resultado."-10-01",true);
- $criteria6->addCondition("Politica=5 AND Estado=0");
+$criteria->compare('Caducidad',$resultado."-05-01",true);
+$criteria->addCondition("(Politica=0 OR Politica=-1)");
+$criteria2->compare('Caducidad',$resultado."-06-01",true);
+$criteria2->addCondition("Politica=1");
+$criteria3->compare('Caducidad',$resultado."-07-01",true);
+$criteria3->addCondition("Politica=2");
+$criteria4->compare('Caducidad',$resultado."-08-01",true);
+$criteria4->addCondition("Politica=3");
+$criteria5->compare('Caducidad',$resultado."-09-01",true);
+$criteria5->addCondition("Politica=4");
+$criteria6->compare('Caducidad',$resultado."-10-01",true);
+$criteria6->addCondition("Politica=5");
 }
 
 if($variable == $resultado."-06-01"){
- $criteria->compare('Caducidad',$resultado."-06-01",true);
- $criteria->addCondition("(Politica=0 OR Politica=-1) AND Estado=0");
- $criteria2->compare('Caducidad',$resultado."-07-01",true);
- $criteria2->addCondition("Politica=1 AND Estado=0");
- $criteria3->compare('Caducidad',$resultado."-08-01",true);
- $criteria3->addCondition("Politica=2 AND Estado=0");
- $criteria4->compare('Caducidad',$resultado."-09-01",true);
- $criteria4->addCondition("Politica=3 AND Estado=0");
- $criteria5->compare('Caducidad',$resultado."-10-01",true);
- $criteria5->addCondition("Politica=4 AND Estado=0");
- $criteria6->compare('Caducidad',$resultado."-11-01",true);
- $criteria6->addCondition("Politica=5 AND Estado=0");
+$criteria->compare('Caducidad',$resultado."-06-01",true);
+$criteria->addCondition("(Politica=0 OR Politica=-1)");
+$criteria2->compare('Caducidad',$resultado."-07-01",true);
+$criteria2->addCondition("Politica=1");
+$criteria3->compare('Caducidad',$resultado."-08-01",true);
+$criteria3->addCondition("Politica=2");
+$criteria4->compare('Caducidad',$resultado."-09-01",true);
+$criteria4->addCondition("Politica=3");
+$criteria5->compare('Caducidad',$resultado."-10-01",true);
+$criteria5->addCondition("Politica=4");
+$criteria6->compare('Caducidad',$resultado."-11-01",true);
+$criteria6->addCondition("Politica=5");
 }
 
 if($variable == $resultado."-07-01"){
- $criteria->compare('Caducidad',$resultado."-07-01",true);
- $criteria->addCondition("(Politica=0 OR Politica=-1) AND Estado=0");
- $criteria2->compare('Caducidad',$resultado."-08-01",true);
- $criteria2->addCondition("Politica=1 AND Estado=0");
- $criteria3->compare('Caducidad',$resultado."-09-01",true);
- $criteria3->addCondition("Politica=2 AND Estado=0");
- $criteria4->compare('Caducidad',$resultado."-10-01",true);
- $criteria4->addCondition("Politica=3 AND Estado=0");
- $criteria5->compare('Caducidad',$resultado."-11-01",true);
- $criteria5->addCondition("Politica=4 AND Estado=0");
- $criteria6->compare('Caducidad',$resultado."-12-01",true);
- $criteria6->addCondition("Politica=5 AND Estado=0");
+$criteria->compare('Caducidad',$resultado."-07-01",true);
+$criteria->addCondition("(Politica=0 OR Politica=-1)");
+$criteria2->compare('Caducidad',$resultado."-08-01",true);
+$criteria2->addCondition("Politica=1");
+$criteria3->compare('Caducidad',$resultado."-09-01",true);
+$criteria3->addCondition("Politica=2");
+$criteria4->compare('Caducidad',$resultado."-10-01",true);
+$criteria4->addCondition("Politica=3");
+$criteria5->compare('Caducidad',$resultado."-11-01",true);
+$criteria5->addCondition("Politica=4");
+$criteria6->compare('Caducidad',$resultado."-12-01",true);
+$criteria6->addCondition("Politica=5");
 }
 
 if($variable == $resultado."-08-01"){
- $criteria->compare('Caducidad',$resultado."-08-01",true);
- $criteria->addCondition("(Politica=0 OR Politica=-1) AND Estado=0");
- $criteria2->compare('Caducidad',$resultado."-09-01",true);
- $criteria2->addCondition("Politica=1 AND Estado=0");
- $criteria3->compare('Caducidad',$resultado."-10-01",true);
- $criteria3->addCondition("Politica=2 AND Estado=0");
- $criteria4->compare('Caducidad',$resultado."-11-01",true);
- $criteria4->addCondition("Politica=3 AND Estado=0");
- $criteria5->compare('Caducidad',$resultado."-12-01",true);
- $criteria5->addCondition("Politica=4 AND Estado=0");
- $criteria6->compare('Caducidad',$year = 1 + (int) $resultado."-01-01",true);
- $criteria6->addCondition("Politica=5 AND Estado=0");
+$criteria->compare('Caducidad',$resultado."-08-01",true);
+$criteria->addCondition("(Politica=0 OR Politica=-1)");
+$criteria2->compare('Caducidad',$resultado."-09-01",true);
+$criteria2->addCondition("Politica=1");
+$criteria3->compare('Caducidad',$resultado."-10-01",true);
+$criteria3->addCondition("Politica=2");
+$criteria4->compare('Caducidad',$resultado."-11-01",true);
+$criteria4->addCondition("Politica=3");
+$criteria5->compare('Caducidad',$resultado."-12-01",true);
+$criteria5->addCondition("Politica=4");
+$criteria6->compare('Caducidad',$year = 1 + (int) $resultado."-01-01",true);
+$criteria6->addCondition("Politica=5");
 }
 
 if($variable == $resultado."-09-01"){
- $criteria->compare('Caducidad',$resultado."-09-01",true);
- $criteria->addCondition("(Politica=0 OR Politica=-1) AND Estado=0");
- $criteria2->compare('Caducidad',$resultado."-10-01",true);
- $criteria2->addCondition("Politica=1 AND Estado=0");
- $criteria3->compare('Caducidad',$resultado."-11-01",true);
- $criteria3->addCondition("Politica=2 AND Estado=0");
- $criteria4->compare('Caducidad',$resultado."-12-01",true);
- $criteria4->addCondition("Politica=3 AND Estado=0");
- $criteria5->compare('Caducidad',$year = 1 + (int) $resultado."-01-01",true);
- $criteria5->addCondition("Politica=4 AND Estado=0");
- $criteria6->compare('Caducidad',$year = 1 + (int) $resultado."-02-01",true);
- $criteria6->addCondition("Politica=5 AND Estado=0");
+$criteria->compare('Caducidad',$resultado."-09-01",true);
+$criteria->addCondition("(Politica=0 OR Politica=-1)");
+$criteria2->compare('Caducidad',$resultado."-10-01",true);
+$criteria2->addCondition("Politica=1");
+$criteria3->compare('Caducidad',$resultado."-11-01",true);
+$criteria3->addCondition("Politica=2");
+$criteria4->compare('Caducidad',$resultado."-12-01",true);
+$criteria4->addCondition("Politica=3");
+$criteria5->compare('Caducidad',$year = 1 + (int) $resultado."-01-01",true);
+$criteria5->addCondition("Politica=4");
+$criteria6->compare('Caducidad',$year = 1 + (int) $resultado."-02-01",true);
+$criteria6->addCondition("Politica=5");
 }
 
 if($variable == $resultado."-10-01"){
- $criteria->compare('Caducidad',$resultado."-10-01",true);
- $criteria->addCondition("(Politica=0 OR Politica=-1) AND Estado=0");
- $criteria2->compare('Caducidad',$resultado."-11-01",true);
- $criteria2->addCondition("Politica=1 AND Estado=0");
- $criteria3->compare('Caducidad',$resultado."-12-01",true);
- $criteria3->addCondition("Politica=2 AND Estado=0");
- $criteria4->compare('Caducidad',$year = 1 + (int) $resultado."-01-01",true);
- $criteria4->addCondition("Politica=3 AND Estado=0");
- $criteria5->compare('Caducidad',$year = 1 + (int) $resultado."-02-01",true);
- $criteria5->addCondition("Politica=4 AND Estado=0");
- $criteria6->compare('Caducidad',$year = 1 + (int) $resultado."-03-01",true);
- $criteria6->addCondition("Politica=5 AND Estado=0");
+$criteria->compare('Caducidad',$resultado."-10-01",true);
+$criteria->addCondition("(Politica=0 OR Politica=-1)");
+$criteria2->compare('Caducidad',$resultado."-11-01",true);
+$criteria2->addCondition("Politica=1");
+$criteria3->compare('Caducidad',$resultado."-12-01",true);
+$criteria3->addCondition("Politica=2");
+$criteria4->compare('Caducidad',$year = 1 + (int) $resultado."-01-01",true);
+$criteria4->addCondition("Politica=3");
+$criteria5->compare('Caducidad',$year = 1 + (int) $resultado."-02-01",true);
+$criteria5->addCondition("Politica=4");
+$criteria6->compare('Caducidad',$year = 1 + (int) $resultado."-03-01",true);
+$criteria6->addCondition("Politica=5");
 }
 
 if($variable == $resultado."-11-01"){
- $criteria->compare('Caducidad',$resultado."-11-01",true);
- $criteria->addCondition("(Politica=0 OR Politica=-1) AND Estado=0");
- $criteria2->compare('Caducidad',$resultado."-12-01",true);
- $criteria2->addCondition("Politica=1 AND Estado=0");
- $criteria3->compare('Caducidad',$year = 1 + (int) $resultado."-01-01",true);
- $criteria3->addCondition("Politica=2 AND Estado=0");
- $criteria4->compare('Caducidad',$year = 1 + (int) $resultado."-02-01",true);
- $criteria4->addCondition("Politica=3 AND Estado=0");
- $criteria5->compare('Caducidad',$year = 1 + (int) $resultado."-03-01",true);
- $criteria5->addCondition("Politica=4 AND Estado=0");
- $criteria6->compare('Caducidad',$year = 1 + (int) $resultado."-04-01",true);
- $criteria6->addCondition("Politica=5 AND Estado=0");
+$criteria->compare('Caducidad',$resultado."-11-01",true);
+$criteria->addCondition("(Politica=0 OR Politica=-1)");
+$criteria2->compare('Caducidad',$resultado."-12-01",true);
+$criteria2->addCondition("Politica=1");
+$criteria3->compare('Caducidad',$year = 1 + (int) $resultado."-01-01",true);
+$criteria3->addCondition("Politica=2");
+$criteria4->compare('Caducidad',$year = 1 + (int) $resultado."-02-01",true);
+$criteria4->addCondition("Politica=3");
+$criteria5->compare('Caducidad',$year = 1 + (int) $resultado."-03-01",true);
+$criteria5->addCondition("Politica=4");
+$criteria6->compare('Caducidad',$year = 1 + (int) $resultado."-04-01",true);
+$criteria6->addCondition("Politica=5");
 }
 
 if($variable == $resultado."-12-01"){
- $criteria->compare('Caducidad',$resultado."-12-01",true);
- $criteria->addCondition("(Politica=0 OR Politica=-1) AND Estado=0");
- $criteria2->compare('Caducidad',$year = 1 + (int) $resultado."-01-01",true);
- $criteria2->addCondition("Politica=1 AND Estado=0");
- $criteria3->compare('Caducidad',$year = 1 + (int) $resultado."-02-01",true);
- $criteria3->addCondition("Politica=2 AND Estado=0");
- $criteria4->compare('Caducidad',$year = 1 + (int) $resultado."-03-01",true);
- $criteria4->addCondition("Politica=3 AND Estado=0");
- $criteria5->compare('Caducidad',$year = 1 + (int) $resultado."-04-01",true);
- $criteria5->addCondition("Politica=4 AND Estado=0");
- $criteria6->compare('Caducidad',$year = 1 + (int) $resultado."-05-01",true);
- $criteria6->addCondition("Politica=5 AND Estado=0");
+$criteria->compare('Caducidad',$resultado."-12-01",true);
+$criteria->addCondition("(Politica=0 OR Politica=-1)");
+$criteria2->compare('Caducidad',$year = 1 + (int) $resultado."-01-01",true);
+$criteria2->addCondition("Politica=1");
+$criteria3->compare('Caducidad',$year = 1 + (int) $resultado."-02-01",true);
+$criteria3->addCondition("Politica=2");
+$criteria4->compare('Caducidad',$year = 1 + (int) $resultado."-03-01",true);
+$criteria4->addCondition("Politica=3");
+$criteria5->compare('Caducidad',$year = 1 + (int) $resultado."-04-01",true);
+$criteria5->addCondition("Politica=4");
+$criteria6->compare('Caducidad',$year = 1 + (int) $resultado."-05-01",true);
+$criteria6->addCondition("Politica=5");
 }
-/*
-		$criteria->compare('Id',$this->Id);
-		$criteria->compare('Nombre',$this->Nombre,true);
-		$criteria->compare('Casa',$this->Casa,true);
-		$criteria->compare('Proveedor',$this->Proveedor,true);
-		$criteria->compare('Politica',$this->Politica,true);
-		//$criteria->compare('Caducidad',$this->Caducidad,true);
-
-$criteria6->order = 'Casa ASC';
-$criteria5->order = 'Casa ASC';
-$criteria4->order = 'Casa ASC';
-$criteria3->order = 'Casa ASC';
-*/
 
 $criteria5->mergeWith($criteria6,'OR');
 $criteria4->mergeWith($criteria5,'OR');
@@ -306,13 +290,16 @@ $criteria->mergeWith($criteria2,'OR');
 $criteria->together = true;
 $criteria->with = array('casa','proveedor', 'producto');
 $criteria->order = 'Caducidad ASC, casa.nombrecasa ASC, producto.nombre_productos ASC';
-$session=new CHttpSession;
-$session->open();
-$session['Reporte_record']=$criteria;
-
+if (strlen($this->Caducidad)>0) {
+	$session = new CHttpSession;
+	$session->open();
+	$session['Reporte_record']=$criteria;
+	//	if (strlen($this->Estado)>0) {
+			$session['estadoReporte'] = $this->Estado;
+	//	}
+}
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
-
 		));
 	}
 

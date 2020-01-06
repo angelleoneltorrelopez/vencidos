@@ -28,7 +28,7 @@ public function accessRules()
 return array(
 array('allow', // allow admin user to perform 'admin' and 'delete' actions
 'actions'=>array('view','create','update','admin','delete','generarpdf','Excel'),
-'users'=>array('admin','angel'),
+'users'=>array('admin','angel','keyla'),
 ),
 array('deny',  // deny all users
 'users'=>array('*'),

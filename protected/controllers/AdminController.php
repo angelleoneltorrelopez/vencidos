@@ -28,8 +28,8 @@ public function accessRules()
 {
 return array(
 array('allow', // allow admin user to perform 'admin' and 'delete' actions
-'actions'=>array('index','view','create','admin','update','delete','generarpdf','Excel'),
-'users'=>array('admin','angel'),
+'actions'=>array('index','view','create','admin','update','delete','generarpdf','Excel','estado'),
+'users'=>array('admin','angel','keyla'),
 ),
 array('deny',  // deny all users
 'users'=>array('*'),
@@ -153,6 +153,7 @@ if($model===null)
 throw new CHttpException(404,'The requested page does not exist.');
 return $model;
 }
+
 
 /**
 * Performs the AJAX validation.
@@ -308,4 +309,6 @@ $cont = 1;
        unset($this->objPHPExcel);
        exit();
    }//fin del método actionExcel
+
+
 }

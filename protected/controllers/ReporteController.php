@@ -27,17 +27,13 @@ return array(
 public function accessRules()
 {
 return array(
-array('allow',  // allow all users to perform 'index' and 'view' actions
-'actions'=>array('index','view'),
-'users'=>array('@'),
-),
 array('allow', // allow authenticated user to perform 'create' and 'update' actions
-'actions'=>array('create','admin','generarpdf','Excel'),
+'actions'=>array('admin','generarpdf','Excel'),
 'users'=>array('@'),
 ),
 array('allow', // allow admin user to perform 'admin' and 'delete' actions
-'actions'=>array('update','delete'),
-'users'=>array('admin','angel'),
+'actions'=>array('update','delete','estado'),
+'users'=>array('admin','angel','keyla'),
 ),
 array('deny',  // deny all users
 'users'=>array('*'),
@@ -108,19 +104,19 @@ $this->render('update',array(
 * If deletion is successful, the browser will be redirected to the 'admin' page.
 * @param integer $id the ID of the model to be deleted
 */
-public function actionDelete($id)
+public function actionDelete()
 {
-if(Yii::app()->request->isPostRequest)
-{
-// we only allow deletion via POST request
-$this->loadModel($id)->delete();
-
-// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
-if(!isset($_GET['ajax']))
-$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
-}
-else
-throw new CHttpException(400,'Invalid request. Please do not repeat this request again.');
+  $model = new Reporte;
+  $session = new CHttpSession;
+  $session->open();
+  if(isset($session['Reporte_record'])){
+  $model=Reporte::model()->findAll($session['Reporte_record']);
+  for ($i=0; $i < sizeof($model); $i++) {
+    $model[$i]->Estado = 2;
+    $model[$i]->update();
+    }
+  }
+  $this->redirect('admin');
 }
 
 /**
@@ -139,7 +135,7 @@ $this->render('index',array(
 */
 public function actionAdmin()
 {
-$model=new Reporte('search');
+$model = new Reporte('search');
 $model->unsetAttributes();  // clear any default values
 if(isset($_GET['Reporte']))
 $model->attributes=$_GET['Reporte'];
@@ -162,6 +158,8 @@ throw new CHttpException(404,'The requested page does not exist.');
 return $model;
 }
 
+
+
 /**
 * Performs the AJAX validation.
 * @param CModel the model to be validated
@@ -174,6 +172,27 @@ echo CActiveForm::validate($model);
 Yii::app()->end();
 }
 }
+
+
+
+public function actionEstado()
+{
+  $model = new Reporte;
+  $session = new CHttpSession;
+  $session->open();
+  if(isset($session['Reporte_record'])){
+  $model=Reporte::model()->findAll($session['Reporte_record']);
+  for ($i=0; $i < sizeof($model); $i++) {
+    if (strlen($session['estadoReporte'])>0) {
+      $model[$i]->Estado = $session['estadoReporte'];
+      $model[$i]->update();
+    }
+    }
+  }
+  $this->redirect('admin');
+}
+
+
 
 public function actionGenerarPdf()
 {

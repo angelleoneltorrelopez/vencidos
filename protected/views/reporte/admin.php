@@ -8,22 +8,17 @@ $this->widget("bootstrap.widgets.TbButtonGroup", array(
 								'url'=>'generarpdf', "htmlOptions" => array("class"=>"btn btn-info")),
 								array('label'=>'<img src="'.Yii::app()->baseUrl.'/images/excel.png"/><strong> Excel</strong>',
 								'url'=>'excel', "htmlOptions" => array("class"=>"btn btn-info")),
+								array('label'=>'<img src="'.Yii::app()->baseUrl.'/images/exchange.png"/><strong> Cambio</strong>',
+								'url'=>'estado', "htmlOptions" => array("class"=>"btn btn-info",'confirm'=>
+								'Seguro querer cambiar el estado del reporte con la fecha seleccionada?')),
+								/*
+								array('label'=>'<img src="'.Yii::app()->baseUrl.'/images/delete.png"/><strong> Borrar</strong>',
+								'url'=>'delete', "htmlOptions" => array("class"=>"btn btn-info",'confirm'=>
+								'Seguro querer borrar este Ingreso?')),
+								*/
             )
         ));
 
-
-Yii::app()->clientScript->registerScript('search', "
-$('.search-button').click(function(){
-$('.search-form').toggle();
-return false;
-});
-$('.search-form form').submit(function(){
-$.fn.yiiGridView.update('ingreso-grid', {
-data: $(this).serialize()
-});
-return false;
-});
-");
 ?>
 
 <h1>Reportes de Vencidos</h1>
@@ -71,7 +66,7 @@ return false;
 		    ),
 		array(
 			'name' => 'Caducidad',
-			'filter' => CHtml::listData(Ingreso::model()->findAll(array('condition'=>'Estado = 0', 'order'=>'Caducidad ASC')), 'Caducidad', 'Caducidad'),
+			'filter' => CHtml::listData(Ingreso::model()->findAll(array('condition'=>'Estado < 2','order'=>'Caducidad ASC')), 'Caducidad', 'Caducidad'),
 			'headerHtmlOptions'=>array('style'=>'text-align: center; background-color: #009688;'),
 		    ),
 		array(
@@ -79,6 +74,12 @@ return false;
 			'filter' => false,
 			'headerHtmlOptions'=>array('style'=>'text-align: center; background-color: #009688;'),
 		    ),
+		array(
+			'name' => 'Estado',
+			'filter' => array('0'=>'Activo','1'=>'Inactivo'),
+			'value'=> '$data["Estado"]==0?"Activo":"Inactivo"',
+			'headerHtmlOptions'=>array('style'=>'text-align: center; background-color: #009688;'),
+				),
 
 ),
 'emptyText' => 'No se encontro ningun producto!',

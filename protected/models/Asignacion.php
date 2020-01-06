@@ -33,11 +33,8 @@ class Asignacion extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('idcasa, idproveedor, politica', 'required'),
-			//array('idcasa, idproveedor, politica', 'unique'),
 			array('idcasa, idproveedor, politica', 'numerical', 'integerOnly'=>true),
 			array('regDate', 'safe'),
-			// The following rule is used by search().
-			// @todo Please remove those attributes that should not be searched.
 			array('idasignacion, idcasa, idproveedor, politica, regDate', 'safe', 'on'=>'search'),
 		);
 	}
@@ -96,10 +93,12 @@ class Asignacion extends CActiveRecord
 
 		$session=new CHttpSession;
 		$session->open();
-		$session['Asignacion_record']=$criteria;  //Esto para guardar la criteria en la sesión actual para usarlo posteriormente.
+		$session['Asignacion_record']=$criteria; 
+		//Esto para guardar la criteria en la sesión actual para usarlo posteriormente.
+		//$session['Asignacion_record']->order = 'casa.nombrecasa ASC, proveedor.nombreprov';
 
         $sort=new CSort();
-       $sort->defaultOrder='casa.nombrecasa ASC';
+       $sort->defaultOrder='casa.nombrecasa ASC, proveedor.nombreprov';
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 			'sort'=>$sort,

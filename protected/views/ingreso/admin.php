@@ -31,7 +31,7 @@ $this->widget("bootstrap.widgets.TbButtonGroup", array(
 						'htmlOptions'=>array('class'=>'pull-right'),
             "buttons"=>array(
                 array('label'=>'<img src="'.Yii::app()->baseUrl.'/images/add.png"/><strong> Crear</strong>',
-								'url'=>'create', "htmlOptions" => array("class"=>"btn btn-info")),
+								'url'=>'http://52.39.84.134/vuejs/', "htmlOptions" => array("class"=>"btn btn-info")),
 								array('label'=>'<img src="'.Yii::app()->baseUrl.'/images/pdf.png"/><strong> Pdf</strong>',
 								'url'=>'generarpdf', "htmlOptions" => array("class"=>"btn btn-info")),
 								array('label'=>'<img src="'.Yii::app()->baseUrl.'/images/excel.png"/><strong> Excel</strong>',
@@ -115,7 +115,6 @@ $this->widget("bootstrap.widgets.TbButtonGroup", array(
   				),
 		array(
 			'name' => 'Estado',
-
 			'filter' => array('0'=>'Activo','1'=>'Inactivo'),
 			'value'=> '$data["Estado"]==0?"Activo":"Inactivo"',
       'headerHtmlOptions'=>array('style'=>'text-align: center; background-color: #009688;'),

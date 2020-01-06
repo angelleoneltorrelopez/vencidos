@@ -4,7 +4,6 @@
 	'focus'=>array($model,'idproducto'),
 	'htmlOptions' => array('class'=>'well','style'=>'background-color:#FFFFFF;'),
 	));
-
 	?>
 
 <div class="row">

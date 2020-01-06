@@ -116,7 +116,6 @@ class Ingreso extends CActiveRecord
 			'criteria'=>$criteria,
 			'sort'=>$sort,
 			'pagination' => array('pageSize' => 10,),
-
 		));
 	}
 

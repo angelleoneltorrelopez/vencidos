@@ -48,6 +48,7 @@ return false;
 					array(
 							 'name'=>'password',
 							 'headerHtmlOptions'=>array('style'=>'text-align: center; background-color: #009688;'),
+							 'value'=> '**********',
 							),
 							array(
 									 'name'=>'email',
