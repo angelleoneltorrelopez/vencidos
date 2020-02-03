@@ -35,7 +35,6 @@ $this->widget('ext.bootstrap.widgets.TbNavbar', array(
  array('label'=>'Reporte', 'icon'=>'check', 'url'=>array('/reporte/admin'),
 'visible'=>!Yii::app()->user->isGuest),
  array('label'=>'Admin', 'icon'=>'star', 'url'=>array('/admin/admin'),'visible'=>strtolower(Yii::app()->user->name) == 'angel' || strtolower(Yii::app()->user->name) =='keyla'),
- array('label'=>'Estado', 'icon'=>'star', 'url'=>array('/estado/admin'),'visible'=>strtolower(Yii::app()->user->name) == 'angel' || strtolower(Yii::app()->user->name) =='keyla'),
  array('label'=>'Politicas', 'icon'=>'indent-left', 'url'=>array('/asignacion/admin'),
 'visible'=>!Yii::app()->user->isGuest),
  array('label'=>'Proveedores', 'icon'=>'briefcase', 'url'=>array('/proveedores/admin'),

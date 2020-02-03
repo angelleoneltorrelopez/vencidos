@@ -48,7 +48,8 @@ return false;
 					array(
 							 'name'=>'password',
 							 'headerHtmlOptions'=>array('style'=>'text-align: center; background-color: #009688;'),
-							 'value'=> '**********',
+							 'value'=> function($model){	$result = "**************";
+				                       return $result;}
 							),
 							array(
 									 'name'=>'email',
