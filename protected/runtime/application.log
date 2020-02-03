@@ -4938,3 +4938,909 @@ REQUEST_URI=/vencidos/index.php/reporte/admin
 in /var/www/html/vencidos/protected/views/reporte/admin.php (42)
 in /var/www/html/vencidos/protected/controllers/ReporteController.php (144)
 in /var/www/html/vencidos/index.php (30)
+2020/01/11 16:45:26 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /var/www/html/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive()
+#2 /var/www/html/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/yii/framework/base/CApplication.php(459): CModule->getComponent()
+#4 /var/www/html/yii/framework/db/ar/CActiveRecord.php(639): CApplication->getDb()
+#5 /var/www/html/yii/framework/db/ar/CActiveRecord.php(672): CActiveRecord->getDbConnection()
+#6 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1463): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/vencidos/protected/components/UserIdentity.php(21): CActiveRecord->find()
+#8 /var/www/html/vencidos/protected/models/LoginForm.php(54): UserIdentity->authenticate()
+#9 /var/www/html/yii/framework/validators/CInlineValidator.php(42): LoginForm->authenticate()
+#10 /var/www/html/yii/framework/validators/CValidator.php(201): CInlineValidator->validateAttribute()
+#11 /var/www/html/yii/framework/base/CModel.php(159): CValidator->validate()
+#12 /var/www/html/vencidos/protected/controllers/SiteController.php(94): CModel->validate()
+#13 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#14 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#15 /var/www/html/yii/framework/web/CController.php(286): CController->runAction()
+#16 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters()
+#17 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run()
+#18 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#19 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /var/www/html/vencidos/index.php(30): CApplication->run()
+#21 {main}
+REQUEST_URI=/vencidos/index.php/site/login
+HTTP_REFERER=http://localhost/vencidos/index.php/site/login
+---
+2020/01/11 16:47:41 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /var/www/html/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive()
+#2 /var/www/html/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/yii/framework/base/CApplication.php(459): CModule->getComponent()
+#4 /var/www/html/yii/framework/db/ar/CActiveRecord.php(639): CApplication->getDb()
+#5 /var/www/html/yii/framework/db/ar/CActiveRecord.php(672): CActiveRecord->getDbConnection()
+#6 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1463): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/vencidos/protected/components/UserIdentity.php(21): CActiveRecord->find()
+#8 /var/www/html/vencidos/protected/models/LoginForm.php(54): UserIdentity->authenticate()
+#9 /var/www/html/yii/framework/validators/CInlineValidator.php(42): LoginForm->authenticate()
+#10 /var/www/html/yii/framework/validators/CValidator.php(201): CInlineValidator->validateAttribute()
+#11 /var/www/html/yii/framework/base/CModel.php(159): CValidator->validate()
+#12 /var/www/html/vencidos/protected/controllers/SiteController.php(94): CModel->validate()
+#13 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#14 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#15 /var/www/html/yii/framework/web/CController.php(286): CController->runAction()
+#16 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters()
+#17 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run()
+#18 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#19 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /var/www/html/vencidos/index.php(30): CApplication->run()
+#21 {main}
+REQUEST_URI=/vencidos/index.php/site/login
+HTTP_REFERER=http://localhost/vencidos/index.php/site/login
+---
+2020/01/11 16:49:38 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /var/www/html/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive()
+#2 /var/www/html/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/yii/framework/base/CApplication.php(459): CModule->getComponent()
+#4 /var/www/html/yii/framework/db/ar/CActiveRecord.php(639): CApplication->getDb()
+#5 /var/www/html/yii/framework/db/ar/CActiveRecord.php(672): CActiveRecord->getDbConnection()
+#6 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1463): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/vencidos/protected/components/UserIdentity.php(21): CActiveRecord->find()
+#8 /var/www/html/vencidos/protected/models/LoginForm.php(54): UserIdentity->authenticate()
+#9 /var/www/html/yii/framework/validators/CInlineValidator.php(42): LoginForm->authenticate()
+#10 /var/www/html/yii/framework/validators/CValidator.php(201): CInlineValidator->validateAttribute()
+#11 /var/www/html/yii/framework/base/CModel.php(159): CValidator->validate()
+#12 /var/www/html/vencidos/protected/controllers/SiteController.php(94): CModel->validate()
+#13 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#14 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#15 /var/www/html/yii/framework/web/CController.php(286): CController->runAction()
+#16 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters()
+#17 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run()
+#18 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#19 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /var/www/html/vencidos/index.php(30): CApplication->run()
+#21 {main}
+REQUEST_URI=/vencidos/index.php/site/login
+HTTP_REFERER=http://localhost/vencidos/index.php/site/login
+---
+2020/01/11 17:02:37 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /var/www/html/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive()
+#2 /var/www/html/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/yii/framework/base/CApplication.php(459): CModule->getComponent()
+#4 /var/www/html/yii/framework/db/ar/CActiveRecord.php(639): CApplication->getDb()
+#5 /var/www/html/yii/framework/db/ar/CActiveRecord.php(672): CActiveRecord->getDbConnection()
+#6 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1463): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/vencidos/protected/components/UserIdentity.php(21): CActiveRecord->find()
+#8 /var/www/html/vencidos/protected/models/LoginForm.php(54): UserIdentity->authenticate()
+#9 /var/www/html/yii/framework/validators/CInlineValidator.php(42): LoginForm->authenticate()
+#10 /var/www/html/yii/framework/validators/CValidator.php(201): CInlineValidator->validateAttribute()
+#11 /var/www/html/yii/framework/base/CModel.php(159): CValidator->validate()
+#12 /var/www/html/vencidos/protected/controllers/SiteController.php(94): CModel->validate()
+#13 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#14 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#15 /var/www/html/yii/framework/web/CController.php(286): CController->runAction()
+#16 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters()
+#17 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run()
+#18 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#19 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /var/www/html/vencidos/index.php(30): CApplication->run()
+#21 {main}
+REQUEST_URI=/vencidos/index.php/site/login
+HTTP_REFERER=http://localhost/vencidos/index.php/site/login
+---
+2020/01/11 17:03:24 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /var/www/html/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive()
+#2 /var/www/html/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/yii/framework/base/CApplication.php(459): CModule->getComponent()
+#4 /var/www/html/yii/framework/db/ar/CActiveRecord.php(639): CApplication->getDb()
+#5 /var/www/html/yii/framework/db/ar/CActiveRecord.php(672): CActiveRecord->getDbConnection()
+#6 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1463): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/vencidos/protected/components/UserIdentity.php(21): CActiveRecord->find()
+#8 /var/www/html/vencidos/protected/models/LoginForm.php(54): UserIdentity->authenticate()
+#9 /var/www/html/yii/framework/validators/CInlineValidator.php(42): LoginForm->authenticate()
+#10 /var/www/html/yii/framework/validators/CValidator.php(201): CInlineValidator->validateAttribute()
+#11 /var/www/html/yii/framework/base/CModel.php(159): CValidator->validate()
+#12 /var/www/html/vencidos/protected/controllers/SiteController.php(94): CModel->validate()
+#13 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#14 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#15 /var/www/html/yii/framework/web/CController.php(286): CController->runAction()
+#16 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters()
+#17 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run()
+#18 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#19 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /var/www/html/vencidos/index.php(30): CApplication->run()
+#21 {main}
+REQUEST_URI=/vencidos/index.php/site/login
+HTTP_REFERER=http://localhost/vencidos/index.php/site/login
+---
+2020/01/11 17:03:30 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /var/www/html/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive()
+#2 /var/www/html/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/yii/framework/base/CApplication.php(459): CModule->getComponent()
+#4 /var/www/html/yii/framework/db/ar/CActiveRecord.php(639): CApplication->getDb()
+#5 /var/www/html/yii/framework/db/ar/CActiveRecord.php(672): CActiveRecord->getDbConnection()
+#6 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1463): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/vencidos/protected/components/UserIdentity.php(21): CActiveRecord->find()
+#8 /var/www/html/vencidos/protected/models/LoginForm.php(54): UserIdentity->authenticate()
+#9 /var/www/html/yii/framework/validators/CInlineValidator.php(42): LoginForm->authenticate()
+#10 /var/www/html/yii/framework/validators/CValidator.php(201): CInlineValidator->validateAttribute()
+#11 /var/www/html/yii/framework/base/CModel.php(159): CValidator->validate()
+#12 /var/www/html/vencidos/protected/controllers/SiteController.php(94): CModel->validate()
+#13 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#14 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#15 /var/www/html/yii/framework/web/CController.php(286): CController->runAction()
+#16 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters()
+#17 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run()
+#18 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#19 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /var/www/html/vencidos/index.php(30): CApplication->run()
+#21 {main}
+REQUEST_URI=/vencidos/index.php/site/login
+HTTP_REFERER=http://localhost/vencidos/index.php/site/login
+---
+2020/01/20 20:13:59 [error] [exception.CException] CException: La propiedad "CUrlManager"."enablePrettyUrl" no se encuentra definida. in /var/www/html/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(220): CComponent->__set()
+#1 /var/www/html/yii/framework/base/CModule.php(393): YiiBase::createComponent()
+#2 /var/www/html/yii/framework/base/CApplication.php(531): CModule->getComponent()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(140): CApplication->getUrlManager()
+#4 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#5 /var/www/html/vencidos/index.php(30): CApplication->run()
+#6 {main}
+REQUEST_URI=/vencidos/
+---
+2020/01/27 18:33:37 [error] [php] A non-numeric value encountered (/var/www/html/vencidos/protected/views/users/admin.php:51)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(872): UsersController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(785): UsersController->renderPartial()
+#2 /var/www/html/vencidos/protected/controllers/UsersController.php(139): UsersController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionAdmin()
+#4 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): UsersController->runAction()
+#6 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#8 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): UsersController->filterAccessControl()
+#9 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#10 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/yii/framework/web/CController.php(265): UsersController->runActionWithFilters()
+#12 /var/www/html/yii/framework/web/CWebApplication.php(282): UsersController->run()
+#13 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /var/www/html/vencidos/index.php(30): CWebApplication->run()
+REQUEST_URI=/vencidos/users/admin
+in /var/www/html/vencidos/protected/views/users/admin.php (51)
+in /var/www/html/vencidos/protected/controllers/UsersController.php (139)
+in /var/www/html/vencidos/index.php (30)
+2020/01/27 18:33:52 [error] [php] Use of undefined constant holra - assumed 'holra' (this will throw an Error in a future version of PHP) (/var/www/html/yii/framework/base/CComponent.php(614) : eval()'d code:1)
+Stack trace:
+#0 /var/www/html/yii/framework/zii/widgets/grid/CGridColumn.php(231): TbDataColumn->getDataCellContent()
+#1 /var/www/html/yii/framework/zii/widgets/grid/CGridColumn.php(154): TbDataColumn->renderDataCellContent()
+#2 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(639): TbDataColumn->renderDataCell()
+#3 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(623): TbGridView->renderDataCell()
+#4 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(579): TbGridView->renderTableRow()
+#5 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(489): TbGridView->renderTableBody()
+#6 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(181): TbGridView->renderItems()
+#7 unknown(0): TbGridView->renderSection()
+#8 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#9 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(149): TbGridView->renderContent()
+#10 /var/www/html/yii/framework/web/CBaseController.php(182): TbGridView->run()
+#11 /var/www/html/vencidos/protected/views/users/admin.php(64): UsersController->widget()
+#12 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#13 /var/www/html/yii/framework/web/CBaseController.php(95): UsersController->renderInternal()
+#14 /var/www/html/yii/framework/web/CController.php(872): UsersController->renderFile()
+#15 /var/www/html/yii/framework/web/CController.php(785): UsersController->renderPartial()
+#16 /var/www/html/vencidos/protected/controllers/UsersController.php(139): UsersController->render()
+#17 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionAdmin()
+#18 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#19 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): UsersController->runAction()
+#20 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#21 /var/www/html/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#22 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): UsersController->filterAccessControl()
+#23 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#24 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#25 /var/www/html/yii/framework/web/CController.php(265): UsersController->runActionWithFilters()
+#26 /var/www/html/yii/framework/web/CWebApplication.php(282): UsersController->run()
+#27 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#28 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#29 /var/www/html/vencidos/index.php(30): CWebApplication->run()
+REQUEST_URI=/vencidos/users/admin
+in /var/www/html/vencidos/protected/views/users/admin.php (64)
+in /var/www/html/vencidos/protected/controllers/UsersController.php (139)
+in /var/www/html/vencidos/index.php (30)
+2020/01/27 18:33:53 [error] [php] Use of undefined constant holra - assumed 'holra' (this will throw an Error in a future version of PHP) (/var/www/html/yii/framework/base/CComponent.php(614) : eval()'d code:1)
+Stack trace:
+#0 /var/www/html/yii/framework/zii/widgets/grid/CGridColumn.php(231): TbDataColumn->getDataCellContent()
+#1 /var/www/html/yii/framework/zii/widgets/grid/CGridColumn.php(154): TbDataColumn->renderDataCellContent()
+#2 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(639): TbDataColumn->renderDataCell()
+#3 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(623): TbGridView->renderDataCell()
+#4 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(579): TbGridView->renderTableRow()
+#5 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(489): TbGridView->renderTableBody()
+#6 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(181): TbGridView->renderItems()
+#7 unknown(0): TbGridView->renderSection()
+#8 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#9 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(149): TbGridView->renderContent()
+#10 /var/www/html/yii/framework/web/CBaseController.php(182): TbGridView->run()
+#11 /var/www/html/vencidos/protected/views/users/admin.php(64): UsersController->widget()
+#12 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#13 /var/www/html/yii/framework/web/CBaseController.php(95): UsersController->renderInternal()
+#14 /var/www/html/yii/framework/web/CController.php(872): UsersController->renderFile()
+#15 /var/www/html/yii/framework/web/CController.php(785): UsersController->renderPartial()
+#16 /var/www/html/vencidos/protected/controllers/UsersController.php(139): UsersController->render()
+#17 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionAdmin()
+#18 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#19 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): UsersController->runAction()
+#20 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#21 /var/www/html/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#22 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): UsersController->filterAccessControl()
+#23 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#24 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#25 /var/www/html/yii/framework/web/CController.php(265): UsersController->runActionWithFilters()
+#26 /var/www/html/yii/framework/web/CWebApplication.php(282): UsersController->run()
+#27 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#28 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#29 /var/www/html/vencidos/index.php(30): CWebApplication->run()
+REQUEST_URI=/vencidos/users/admin
+in /var/www/html/vencidos/protected/views/users/admin.php (64)
+in /var/www/html/vencidos/protected/controllers/UsersController.php (139)
+in /var/www/html/vencidos/index.php (30)
+2020/01/27 18:34:12 [error] [php] Use of undefined constant holra - assumed 'holra' (this will throw an Error in a future version of PHP) (/var/www/html/yii/framework/base/CComponent.php(614) : eval()'d code:1)
+Stack trace:
+#0 /var/www/html/yii/framework/zii/widgets/grid/CGridColumn.php(231): TbDataColumn->getDataCellContent()
+#1 /var/www/html/yii/framework/zii/widgets/grid/CGridColumn.php(154): TbDataColumn->renderDataCellContent()
+#2 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(639): TbDataColumn->renderDataCell()
+#3 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(623): TbGridView->renderDataCell()
+#4 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(579): TbGridView->renderTableRow()
+#5 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(489): TbGridView->renderTableBody()
+#6 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(181): TbGridView->renderItems()
+#7 unknown(0): TbGridView->renderSection()
+#8 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#9 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(149): TbGridView->renderContent()
+#10 /var/www/html/yii/framework/web/CBaseController.php(182): TbGridView->run()
+#11 /var/www/html/vencidos/protected/views/users/admin.php(64): UsersController->widget()
+#12 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#13 /var/www/html/yii/framework/web/CBaseController.php(95): UsersController->renderInternal()
+#14 /var/www/html/yii/framework/web/CController.php(872): UsersController->renderFile()
+#15 /var/www/html/yii/framework/web/CController.php(785): UsersController->renderPartial()
+#16 /var/www/html/vencidos/protected/controllers/UsersController.php(139): UsersController->render()
+#17 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionAdmin()
+#18 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#19 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): UsersController->runAction()
+#20 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#21 /var/www/html/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#22 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): UsersController->filterAccessControl()
+#23 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#24 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#25 /var/www/html/yii/framework/web/CController.php(265): UsersController->runActionWithFilters()
+#26 /var/www/html/yii/framework/web/CWebApplication.php(282): UsersController->run()
+#27 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#28 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#29 /var/www/html/vencidos/index.php(30): CWebApplication->run()
+REQUEST_URI=/vencidos/users/admin
+in /var/www/html/vencidos/protected/views/users/admin.php (64)
+in /var/www/html/vencidos/protected/controllers/UsersController.php (139)
+in /var/www/html/vencidos/index.php (30)
+2020/01/27 18:34:17 [error] [php] Use of undefined constant holra - assumed 'holra' (this will throw an Error in a future version of PHP) (/var/www/html/yii/framework/base/CComponent.php(614) : eval()'d code:1)
+Stack trace:
+#0 /var/www/html/yii/framework/zii/widgets/grid/CGridColumn.php(231): TbDataColumn->getDataCellContent()
+#1 /var/www/html/yii/framework/zii/widgets/grid/CGridColumn.php(154): TbDataColumn->renderDataCellContent()
+#2 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(639): TbDataColumn->renderDataCell()
+#3 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(623): TbGridView->renderDataCell()
+#4 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(579): TbGridView->renderTableRow()
+#5 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(489): TbGridView->renderTableBody()
+#6 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(181): TbGridView->renderItems()
+#7 unknown(0): TbGridView->renderSection()
+#8 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#9 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(149): TbGridView->renderContent()
+#10 /var/www/html/yii/framework/web/CBaseController.php(182): TbGridView->run()
+#11 /var/www/html/vencidos/protected/views/users/admin.php(64): UsersController->widget()
+#12 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#13 /var/www/html/yii/framework/web/CBaseController.php(95): UsersController->renderInternal()
+#14 /var/www/html/yii/framework/web/CController.php(872): UsersController->renderFile()
+#15 /var/www/html/yii/framework/web/CController.php(785): UsersController->renderPartial()
+#16 /var/www/html/vencidos/protected/controllers/UsersController.php(139): UsersController->render()
+#17 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionAdmin()
+#18 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#19 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): UsersController->runAction()
+#20 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#21 /var/www/html/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#22 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): UsersController->filterAccessControl()
+#23 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#24 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#25 /var/www/html/yii/framework/web/CController.php(265): UsersController->runActionWithFilters()
+#26 /var/www/html/yii/framework/web/CWebApplication.php(282): UsersController->run()
+#27 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#28 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#29 /var/www/html/vencidos/index.php(30): CWebApplication->run()
+REQUEST_URI=/vencidos/users/admin
+in /var/www/html/vencidos/protected/views/users/admin.php (64)
+in /var/www/html/vencidos/protected/controllers/UsersController.php (139)
+in /var/www/html/vencidos/index.php (30)
+2020/01/27 18:34:33 [error] [php] Use of undefined constant holra - assumed 'holra' (this will throw an Error in a future version of PHP) (/var/www/html/yii/framework/base/CComponent.php(614) : eval()'d code:1)
+Stack trace:
+#0 /var/www/html/yii/framework/zii/widgets/grid/CGridColumn.php(231): TbDataColumn->getDataCellContent()
+#1 /var/www/html/yii/framework/zii/widgets/grid/CGridColumn.php(154): TbDataColumn->renderDataCellContent()
+#2 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(639): TbDataColumn->renderDataCell()
+#3 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(623): TbGridView->renderDataCell()
+#4 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(579): TbGridView->renderTableRow()
+#5 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(489): TbGridView->renderTableBody()
+#6 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(181): TbGridView->renderItems()
+#7 unknown(0): TbGridView->renderSection()
+#8 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#9 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(149): TbGridView->renderContent()
+#10 /var/www/html/yii/framework/web/CBaseController.php(182): TbGridView->run()
+#11 /var/www/html/vencidos/protected/views/users/admin.php(64): UsersController->widget()
+#12 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#13 /var/www/html/yii/framework/web/CBaseController.php(95): UsersController->renderInternal()
+#14 /var/www/html/yii/framework/web/CController.php(872): UsersController->renderFile()
+#15 /var/www/html/yii/framework/web/CController.php(785): UsersController->renderPartial()
+#16 /var/www/html/vencidos/protected/controllers/UsersController.php(139): UsersController->render()
+#17 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionAdmin()
+#18 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#19 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): UsersController->runAction()
+#20 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#21 /var/www/html/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#22 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): UsersController->filterAccessControl()
+#23 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#24 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#25 /var/www/html/yii/framework/web/CController.php(265): UsersController->runActionWithFilters()
+#26 /var/www/html/yii/framework/web/CWebApplication.php(282): UsersController->run()
+#27 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#28 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#29 /var/www/html/vencidos/index.php(30): CWebApplication->run()
+REQUEST_URI=/vencidos/users/admin
+in /var/www/html/vencidos/protected/views/users/admin.php (64)
+in /var/www/html/vencidos/protected/controllers/UsersController.php (139)
+in /var/www/html/vencidos/index.php (30)
+2020/01/27 18:34:33 [error] [php] Use of undefined constant holra - assumed 'holra' (this will throw an Error in a future version of PHP) (/var/www/html/yii/framework/base/CComponent.php(614) : eval()'d code:1)
+Stack trace:
+#0 /var/www/html/yii/framework/zii/widgets/grid/CGridColumn.php(231): TbDataColumn->getDataCellContent()
+#1 /var/www/html/yii/framework/zii/widgets/grid/CGridColumn.php(154): TbDataColumn->renderDataCellContent()
+#2 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(639): TbDataColumn->renderDataCell()
+#3 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(623): TbGridView->renderDataCell()
+#4 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(579): TbGridView->renderTableRow()
+#5 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(489): TbGridView->renderTableBody()
+#6 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(181): TbGridView->renderItems()
+#7 unknown(0): TbGridView->renderSection()
+#8 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#9 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(149): TbGridView->renderContent()
+#10 /var/www/html/yii/framework/web/CBaseController.php(182): TbGridView->run()
+#11 /var/www/html/vencidos/protected/views/users/admin.php(64): UsersController->widget()
+#12 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#13 /var/www/html/yii/framework/web/CBaseController.php(95): UsersController->renderInternal()
+#14 /var/www/html/yii/framework/web/CController.php(872): UsersController->renderFile()
+#15 /var/www/html/yii/framework/web/CController.php(785): UsersController->renderPartial()
+#16 /var/www/html/vencidos/protected/controllers/UsersController.php(139): UsersController->render()
+#17 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionAdmin()
+#18 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#19 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): UsersController->runAction()
+#20 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#21 /var/www/html/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#22 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): UsersController->filterAccessControl()
+#23 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#24 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#25 /var/www/html/yii/framework/web/CController.php(265): UsersController->runActionWithFilters()
+#26 /var/www/html/yii/framework/web/CWebApplication.php(282): UsersController->run()
+#27 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#28 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#29 /var/www/html/vencidos/index.php(30): CWebApplication->run()
+REQUEST_URI=/vencidos/users/admin
+in /var/www/html/vencidos/protected/views/users/admin.php (64)
+in /var/www/html/vencidos/protected/controllers/UsersController.php (139)
+in /var/www/html/vencidos/index.php (30)
+2020/01/27 18:34:33 [error] [php] Use of undefined constant holra - assumed 'holra' (this will throw an Error in a future version of PHP) (/var/www/html/yii/framework/base/CComponent.php(614) : eval()'d code:1)
+Stack trace:
+#0 /var/www/html/yii/framework/zii/widgets/grid/CGridColumn.php(231): TbDataColumn->getDataCellContent()
+#1 /var/www/html/yii/framework/zii/widgets/grid/CGridColumn.php(154): TbDataColumn->renderDataCellContent()
+#2 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(639): TbDataColumn->renderDataCell()
+#3 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(623): TbGridView->renderDataCell()
+#4 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(579): TbGridView->renderTableRow()
+#5 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(489): TbGridView->renderTableBody()
+#6 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(181): TbGridView->renderItems()
+#7 unknown(0): TbGridView->renderSection()
+#8 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#9 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(149): TbGridView->renderContent()
+#10 /var/www/html/yii/framework/web/CBaseController.php(182): TbGridView->run()
+#11 /var/www/html/vencidos/protected/views/users/admin.php(64): UsersController->widget()
+#12 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#13 /var/www/html/yii/framework/web/CBaseController.php(95): UsersController->renderInternal()
+#14 /var/www/html/yii/framework/web/CController.php(872): UsersController->renderFile()
+#15 /var/www/html/yii/framework/web/CController.php(785): UsersController->renderPartial()
+#16 /var/www/html/vencidos/protected/controllers/UsersController.php(139): UsersController->render()
+#17 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionAdmin()
+#18 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#19 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): UsersController->runAction()
+#20 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#21 /var/www/html/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#22 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): UsersController->filterAccessControl()
+#23 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#24 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#25 /var/www/html/yii/framework/web/CController.php(265): UsersController->runActionWithFilters()
+#26 /var/www/html/yii/framework/web/CWebApplication.php(282): UsersController->run()
+#27 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#28 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#29 /var/www/html/vencidos/index.php(30): CWebApplication->run()
+REQUEST_URI=/vencidos/users/admin
+in /var/www/html/vencidos/protected/views/users/admin.php (64)
+in /var/www/html/vencidos/protected/controllers/UsersController.php (139)
+in /var/www/html/vencidos/index.php (30)
+2020/01/27 18:34:33 [error] [php] Use of undefined constant holra - assumed 'holra' (this will throw an Error in a future version of PHP) (/var/www/html/yii/framework/base/CComponent.php(614) : eval()'d code:1)
+Stack trace:
+#0 /var/www/html/yii/framework/zii/widgets/grid/CGridColumn.php(231): TbDataColumn->getDataCellContent()
+#1 /var/www/html/yii/framework/zii/widgets/grid/CGridColumn.php(154): TbDataColumn->renderDataCellContent()
+#2 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(639): TbDataColumn->renderDataCell()
+#3 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(623): TbGridView->renderDataCell()
+#4 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(579): TbGridView->renderTableRow()
+#5 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(489): TbGridView->renderTableBody()
+#6 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(181): TbGridView->renderItems()
+#7 unknown(0): TbGridView->renderSection()
+#8 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#9 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(149): TbGridView->renderContent()
+#10 /var/www/html/yii/framework/web/CBaseController.php(182): TbGridView->run()
+#11 /var/www/html/vencidos/protected/views/users/admin.php(64): UsersController->widget()
+#12 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#13 /var/www/html/yii/framework/web/CBaseController.php(95): UsersController->renderInternal()
+#14 /var/www/html/yii/framework/web/CController.php(872): UsersController->renderFile()
+#15 /var/www/html/yii/framework/web/CController.php(785): UsersController->renderPartial()
+#16 /var/www/html/vencidos/protected/controllers/UsersController.php(139): UsersController->render()
+#17 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionAdmin()
+#18 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#19 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): UsersController->runAction()
+#20 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#21 /var/www/html/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#22 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): UsersController->filterAccessControl()
+#23 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#24 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#25 /var/www/html/yii/framework/web/CController.php(265): UsersController->runActionWithFilters()
+#26 /var/www/html/yii/framework/web/CWebApplication.php(282): UsersController->run()
+#27 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#28 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#29 /var/www/html/vencidos/index.php(30): CWebApplication->run()
+REQUEST_URI=/vencidos/users/admin
+in /var/www/html/vencidos/protected/views/users/admin.php (64)
+in /var/www/html/vencidos/protected/controllers/UsersController.php (139)
+in /var/www/html/vencidos/index.php (30)
+2020/01/27 18:34:33 [error] [php] Use of undefined constant holra - assumed 'holra' (this will throw an Error in a future version of PHP) (/var/www/html/yii/framework/base/CComponent.php(614) : eval()'d code:1)
+Stack trace:
+#0 /var/www/html/yii/framework/zii/widgets/grid/CGridColumn.php(231): TbDataColumn->getDataCellContent()
+#1 /var/www/html/yii/framework/zii/widgets/grid/CGridColumn.php(154): TbDataColumn->renderDataCellContent()
+#2 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(639): TbDataColumn->renderDataCell()
+#3 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(623): TbGridView->renderDataCell()
+#4 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(579): TbGridView->renderTableRow()
+#5 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(489): TbGridView->renderTableBody()
+#6 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(181): TbGridView->renderItems()
+#7 unknown(0): TbGridView->renderSection()
+#8 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#9 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(149): TbGridView->renderContent()
+#10 /var/www/html/yii/framework/web/CBaseController.php(182): TbGridView->run()
+#11 /var/www/html/vencidos/protected/views/users/admin.php(64): UsersController->widget()
+#12 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#13 /var/www/html/yii/framework/web/CBaseController.php(95): UsersController->renderInternal()
+#14 /var/www/html/yii/framework/web/CController.php(872): UsersController->renderFile()
+#15 /var/www/html/yii/framework/web/CController.php(785): UsersController->renderPartial()
+#16 /var/www/html/vencidos/protected/controllers/UsersController.php(139): UsersController->render()
+#17 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionAdmin()
+#18 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#19 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): UsersController->runAction()
+#20 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#21 /var/www/html/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#22 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): UsersController->filterAccessControl()
+#23 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#24 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#25 /var/www/html/yii/framework/web/CController.php(265): UsersController->runActionWithFilters()
+#26 /var/www/html/yii/framework/web/CWebApplication.php(282): UsersController->run()
+#27 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#28 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#29 /var/www/html/vencidos/index.php(30): CWebApplication->run()
+REQUEST_URI=/vencidos/users/admin
+in /var/www/html/vencidos/protected/views/users/admin.php (64)
+in /var/www/html/vencidos/protected/controllers/UsersController.php (139)
+in /var/www/html/vencidos/index.php (30)
+2020/01/27 18:34:34 [error] [php] Use of undefined constant holra - assumed 'holra' (this will throw an Error in a future version of PHP) (/var/www/html/yii/framework/base/CComponent.php(614) : eval()'d code:1)
+Stack trace:
+#0 /var/www/html/yii/framework/zii/widgets/grid/CGridColumn.php(231): TbDataColumn->getDataCellContent()
+#1 /var/www/html/yii/framework/zii/widgets/grid/CGridColumn.php(154): TbDataColumn->renderDataCellContent()
+#2 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(639): TbDataColumn->renderDataCell()
+#3 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(623): TbGridView->renderDataCell()
+#4 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(579): TbGridView->renderTableRow()
+#5 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(489): TbGridView->renderTableBody()
+#6 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(181): TbGridView->renderItems()
+#7 unknown(0): TbGridView->renderSection()
+#8 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#9 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(149): TbGridView->renderContent()
+#10 /var/www/html/yii/framework/web/CBaseController.php(182): TbGridView->run()
+#11 /var/www/html/vencidos/protected/views/users/admin.php(64): UsersController->widget()
+#12 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#13 /var/www/html/yii/framework/web/CBaseController.php(95): UsersController->renderInternal()
+#14 /var/www/html/yii/framework/web/CController.php(872): UsersController->renderFile()
+#15 /var/www/html/yii/framework/web/CController.php(785): UsersController->renderPartial()
+#16 /var/www/html/vencidos/protected/controllers/UsersController.php(139): UsersController->render()
+#17 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionAdmin()
+#18 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#19 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): UsersController->runAction()
+#20 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#21 /var/www/html/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#22 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): UsersController->filterAccessControl()
+#23 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#24 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#25 /var/www/html/yii/framework/web/CController.php(265): UsersController->runActionWithFilters()
+#26 /var/www/html/yii/framework/web/CWebApplication.php(282): UsersController->run()
+#27 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#28 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#29 /var/www/html/vencidos/index.php(30): CWebApplication->run()
+REQUEST_URI=/vencidos/users/admin
+in /var/www/html/vencidos/protected/views/users/admin.php (64)
+in /var/www/html/vencidos/protected/controllers/UsersController.php (139)
+in /var/www/html/vencidos/index.php (30)
+2020/01/27 18:34:37 [error] [php] Use of undefined constant holra - assumed 'holra' (this will throw an Error in a future version of PHP) (/var/www/html/yii/framework/base/CComponent.php(614) : eval()'d code:1)
+Stack trace:
+#0 /var/www/html/yii/framework/zii/widgets/grid/CGridColumn.php(231): TbDataColumn->getDataCellContent()
+#1 /var/www/html/yii/framework/zii/widgets/grid/CGridColumn.php(154): TbDataColumn->renderDataCellContent()
+#2 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(639): TbDataColumn->renderDataCell()
+#3 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(623): TbGridView->renderDataCell()
+#4 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(579): TbGridView->renderTableRow()
+#5 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(489): TbGridView->renderTableBody()
+#6 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(181): TbGridView->renderItems()
+#7 unknown(0): TbGridView->renderSection()
+#8 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#9 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(149): TbGridView->renderContent()
+#10 /var/www/html/yii/framework/web/CBaseController.php(182): TbGridView->run()
+#11 /var/www/html/vencidos/protected/views/users/admin.php(64): UsersController->widget()
+#12 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#13 /var/www/html/yii/framework/web/CBaseController.php(95): UsersController->renderInternal()
+#14 /var/www/html/yii/framework/web/CController.php(872): UsersController->renderFile()
+#15 /var/www/html/yii/framework/web/CController.php(785): UsersController->renderPartial()
+#16 /var/www/html/vencidos/protected/controllers/UsersController.php(139): UsersController->render()
+#17 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionAdmin()
+#18 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#19 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): UsersController->runAction()
+#20 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#21 /var/www/html/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#22 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): UsersController->filterAccessControl()
+#23 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#24 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#25 /var/www/html/yii/framework/web/CController.php(265): UsersController->runActionWithFilters()
+#26 /var/www/html/yii/framework/web/CWebApplication.php(282): UsersController->run()
+#27 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#28 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#29 /var/www/html/vencidos/index.php(30): CWebApplication->run()
+REQUEST_URI=/vencidos/users/admin
+in /var/www/html/vencidos/protected/views/users/admin.php (64)
+in /var/www/html/vencidos/protected/controllers/UsersController.php (139)
+in /var/www/html/vencidos/index.php (30)
+2020/01/27 18:39:06 [error] [exception.ParseError] ParseError: syntax error, unexpected 'return' (T_RETURN), expecting ')' in /var/www/html/vencidos/protected/views/users/admin.php:52
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#1 /var/www/html/yii/framework/web/CController.php(872): CBaseController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(785): CController->renderPartial()
+#3 /var/www/html/vencidos/protected/controllers/UsersController.php(139): CController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionAdmin()
+#5 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction()
+#7 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/html/yii/framework/web/CController.php(1148): CFilter->filter()
+#9 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#10 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#11 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters()
+#13 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run()
+#14 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/vencidos/index.php(30): CApplication->run()
+#17 {main}
+REQUEST_URI=/vencidos/users/admin
+---
+2020/02/02 18:29:04 [error] [exception.ParseError] ParseError: syntax error, unexpected '=', expecting ')' in /var/www/html/vencidos/protected/views/site/login.php:25
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#1 /var/www/html/yii/framework/web/CController.php(872): CBaseController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(785): CController->renderPartial()
+#3 /var/www/html/vencidos/protected/controllers/SiteController.php(98): CController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#5 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(286): CController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /var/www/html/vencidos/index.php(30): CApplication->run()
+#12 {main}
+REQUEST_URI=/vencidos/site/login
+HTTP_REFERER=http://localhost/vencidos/
+---
+2020/02/02 18:29:44 [error] [exception.ParseError] ParseError: syntax error, unexpected '=', expecting ')' in /var/www/html/vencidos/protected/views/site/login.php:25
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#1 /var/www/html/yii/framework/web/CController.php(872): CBaseController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(785): CController->renderPartial()
+#3 /var/www/html/vencidos/protected/controllers/SiteController.php(98): CController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#5 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(286): CController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /var/www/html/vencidos/index.php(30): CApplication->run()
+#12 {main}
+REQUEST_URI=/vencidos/site/login
+HTTP_REFERER=http://localhost/vencidos/
+---
+2020/02/02 20:11:51 [error] [exception.CException] CException: Ingreso y sus behaviors no tienen un método o closure llamado "getImage". in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(229): CComponent->__call()
+#1 /var/www/html/yii/framework/base/CComponent.php(614) : eval()'d code(1): CActiveRecord->__call()
+#2 /var/www/html/yii/framework/base/CComponent.php(614): eval()
+#3 /var/www/html/vencidos/protected/extensions/bootstrap/widgets/TbImageColumn.php(74): CComponent->evaluateExpression()
+#4 /var/www/html/yii/framework/zii/widgets/grid/CGridColumn.php(154): TbImageColumn->renderDataCellContent()
+#5 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(639): CGridColumn->renderDataCell()
+#6 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(623): CGridView->renderDataCell()
+#7 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(579): CGridView->renderTableRow()
+#8 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(489): CGridView->renderTableBody()
+#9 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(181): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection()
+#11 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#12 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(149): CBaseListView->renderContent()
+#13 /var/www/html/yii/framework/web/CBaseController.php(182): CBaseListView->run()
+#14 /var/www/html/vencidos/protected/views/ingreso/admin.php(138): CBaseController->widget()
+#15 /var/www/html/yii/framework/web/CBaseController.php(126): require('/var/www/html/v...')
+#16 /var/www/html/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#17 /var/www/html/yii/framework/web/CController.php(872): CBaseController->renderFile()
+#18 /var/www/html/yii/framework/web/CController.php(785): CController->renderPartial()
+#19 /var/www/html/vencidos/protected/controllers/IngresoController.php(144): CController->render()
+#20 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): IngresoController->actionAdmin()
+#21 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#22 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction()
+#23 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#24 /var/www/html/yii/framework/web/CController.php(1148): CFilter->filter()
+#25 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#26 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#27 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#28 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters()
+#29 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run()
+#30 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#31 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#32 /var/www/html/vencidos/index.php(30): CApplication->run()
+#33 {main}
+REQUEST_URI=/vencidos/ingreso/admin
+HTTP_REFERER=http://localhost/vencidos/
+---
+2020/02/02 20:14:12 [error] [exception.CException] CException: La propiedad "TbGridView"."0" no se encuentra definida. in /var/www/html/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWidgetFactory.php(161): CComponent->__set()
+#1 /var/www/html/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget()
+#2 /var/www/html/yii/framework/web/CBaseController.php(181): CBaseController->createWidget()
+#3 /var/www/html/vencidos/protected/views/ingreso/admin.php(139): CBaseController->widget()
+#4 /var/www/html/yii/framework/web/CBaseController.php(126): require('/var/www/html/v...')
+#5 /var/www/html/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#6 /var/www/html/yii/framework/web/CController.php(872): CBaseController->renderFile()
+#7 /var/www/html/yii/framework/web/CController.php(785): CController->renderPartial()
+#8 /var/www/html/vencidos/protected/controllers/IngresoController.php(144): CController->render()
+#9 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): IngresoController->actionAdmin()
+#10 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction()
+#12 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /var/www/html/yii/framework/web/CController.php(1148): CFilter->filter()
+#14 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#15 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#16 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#17 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters()
+#18 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run()
+#19 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#20 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#21 /var/www/html/vencidos/index.php(30): CApplication->run()
+#22 {main}
+REQUEST_URI=/vencidos/ingreso/admin
+HTTP_REFERER=http://localhost/vencidos/
+---
+2020/02/02 20:17:04 [error] [exception.Error] Error: Object of class IngresoController could not be converted to string in /var/www/html/vencidos/protected/views/ingreso/admin.php:130
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#1 /var/www/html/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#2 /var/www/html/yii/framework/web/CController.php(872): CBaseController->renderFile()
+#3 /var/www/html/yii/framework/web/CController.php(785): CController->renderPartial()
+#4 /var/www/html/vencidos/protected/controllers/IngresoController.php(144): CController->render()
+#5 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): IngresoController->actionAdmin()
+#6 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction()
+#8 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /var/www/html/yii/framework/web/CController.php(1148): CFilter->filter()
+#10 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#11 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#12 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters()
+#14 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run()
+#15 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#17 /var/www/html/vencidos/index.php(30): CApplication->run()
+#18 {main}
+REQUEST_URI=/vencidos/ingreso/admin
+HTTP_REFERER=http://localhost/vencidos/
+---
+2020/02/02 20:17:45 [error] [exception.Error] Error: Object of class IngresoController could not be converted to string in /var/www/html/vencidos/protected/views/ingreso/admin.php:130
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#1 /var/www/html/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#2 /var/www/html/yii/framework/web/CController.php(872): CBaseController->renderFile()
+#3 /var/www/html/yii/framework/web/CController.php(785): CController->renderPartial()
+#4 /var/www/html/vencidos/protected/controllers/IngresoController.php(144): CController->render()
+#5 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): IngresoController->actionAdmin()
+#6 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction()
+#8 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /var/www/html/yii/framework/web/CController.php(1148): CFilter->filter()
+#10 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#11 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#12 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters()
+#14 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run()
+#15 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#17 /var/www/html/vencidos/index.php(30): CApplication->run()
+#18 {main}
+REQUEST_URI=/vencidos/ingreso/admin
+HTTP_REFERER=http://localhost/vencidos/
+---
+2020/02/02 20:21:29 [error] [exception.CHttpException.404] CHttpException: El sistema no ha podido encontrar la acción "images" solicitada. in /var/www/html/yii/framework/web/CController.php:486
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(270): CController->missingAction()
+#1 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/vencidos/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/vencidos/site/images/delete.png
+HTTP_REFERER=http://localhost/vencidos/site/login
+---
+2020/02/02 20:22:06 [error] [exception.CHttpException.404] CHttpException: El sistema no ha podido encontrar la acción "images" solicitada. in /var/www/html/yii/framework/web/CController.php:486
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(270): CController->missingAction()
+#1 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/vencidos/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/vencidos/site/images/delete.png
+HTTP_REFERER=http://localhost/vencidos/site/login
+---
+2020/02/02 20:23:26 [error] [exception.CHttpException.404] CHttpException: El sistema no ha podido encontrar la acción "images" solicitada. in /var/www/html/yii/framework/web/CController.php:486
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(270): CController->missingAction()
+#1 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/vencidos/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/vencidos/site/images/delete.png
+HTTP_REFERER=http://localhost/vencidos/site/login
+---
+2020/02/02 20:24:26 [error] [exception.CHttpException.404] CHttpException: El sistema no ha podido encontrar la acción "images" solicitada. in /var/www/html/yii/framework/web/CController.php:486
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(270): CController->missingAction()
+#1 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/vencidos/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/vencidos/site/images/delete.png
+HTTP_REFERER=http://localhost/vencidos/site/login
+---
+2020/02/02 20:25:22 [error] [exception.CHttpException.404] CHttpException: El sistema no ha podido encontrar la acción "images" solicitada. in /var/www/html/yii/framework/web/CController.php:486
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(270): CController->missingAction()
+#1 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/vencidos/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/vencidos/site/images/delete.png
+HTTP_REFERER=http://localhost/vencidos/site/login
+---
+2020/02/02 20:25:23 [error] [exception.CHttpException.404] CHttpException: El sistema no ha podido encontrar la acción "images" solicitada. in /var/www/html/yii/framework/web/CController.php:486
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(270): CController->missingAction()
+#1 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/vencidos/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/vencidos/site/images/delete.png
+HTTP_REFERER=http://localhost/vencidos/site/login
+---
+2020/02/02 20:25:24 [error] [exception.CHttpException.404] CHttpException: El sistema no ha podido encontrar la acción "images" solicitada. in /var/www/html/yii/framework/web/CController.php:486
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(270): CController->missingAction()
+#1 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/vencidos/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/vencidos/site/images/delete.png
+HTTP_REFERER=http://localhost/vencidos/site/login
+---
+2020/02/02 20:25:24 [error] [exception.CHttpException.404] CHttpException: El sistema no ha podido encontrar la acción "images" solicitada. in /var/www/html/yii/framework/web/CController.php:486
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(270): CController->missingAction()
+#1 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/vencidos/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/vencidos/site/images/delete.png
+HTTP_REFERER=http://localhost/vencidos/site/login
+---
+2020/02/02 20:25:24 [error] [exception.CHttpException.404] CHttpException: El sistema no ha podido encontrar la acción "images" solicitada. in /var/www/html/yii/framework/web/CController.php:486
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(270): CController->missingAction()
+#1 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/vencidos/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/vencidos/site/images/delete.png
+HTTP_REFERER=http://localhost/vencidos/site/login
+---
+2020/02/02 21:27:55 [error] [exception.CHttpException.404] CHttpException: El sistema no ha podido encontrar la acción "admin.html" solicitada. in /var/www/html/yii/framework/web/CController.php:486
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(270): CController->missingAction()
+#1 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/vencidos/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/vencidos/admin/admin.html
+HTTP_REFERER=http://localhost/vencidos/casa/admin.html
+---
+2020/02/02 21:27:57 [error] [exception.CHttpException.404] CHttpException: El sistema no ha podido encontrar la acción "admin.html" solicitada. in /var/www/html/yii/framework/web/CController.php:486
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(270): CController->missingAction()
+#1 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/vencidos/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/vencidos/admin/admin.html
+HTTP_REFERER=http://localhost/vencidos/casa/admin.html
+---
+2020/02/02 21:27:58 [error] [exception.CHttpException.404] CHttpException: El sistema no ha podido encontrar la acción "admin.html" solicitada. in /var/www/html/yii/framework/web/CController.php:486
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(270): CController->missingAction()
+#1 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/vencidos/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/vencidos/admin/admin.html
+HTTP_REFERER=http://localhost/vencidos/casa/admin.html
+---
+2020/02/02 21:32:04 [error] [exception.CHttpException.404] CHttpException: El sistema no ha podido encontrar la acción "a" solicitada. in /var/www/html/yii/framework/web/CController.php:486
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(270): CController->missingAction()
+#1 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/vencidos/index.php(30): CApplication->run()
+#5 {main}
+REQUEST_URI=/vencidos/productos/a
+---
